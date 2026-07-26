@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technosaviour 2026 | DDGDVC</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+
+.ticker{
+    display:flex;
+    align-items:center;
+    white-space:nowrap;
+    width:max-content;
+    animation:scrollTicker 18s linear infinite;
+}
+
+.ticker span{
+    flex-shrink:0;
+    padding:0 25px;
+}
+
+@keyframes scrollTicker{
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+}
+.slider-container{
+    position:relative;
+    width:100%;
+    max-width:1400px;
+    margin:40px auto;
+}
+
+.slider-wrapper{
+    overflow:hidden;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+.slider{
+    display:flex;
+    transition:transform .8s ease-in-out;
+}
+
+.slider img{
+    width:100%;
+    flex-shrink:0;
+    height:450px;
+    object-fit:cover;
+}
+
+.nav{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:50px;
+    height:50px;
+    border:none;
+    background:rgba(0,0,0,.6);
+    color:#fff;
+    font-size:28px;
+    cursor:pointer;
+    border-radius:6px;
+    z-index:100;
+}
+
+.prev{
+    left:15px;
+}
+
+.next{
+    right:15px;
+}
+
+.nav:hover{
+    background:#10b981;
+}
+</style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-slate-950">
+
+    <!-- HERO HEADER SECTION -->
+    <header class="relative bg-gradient-to-b from-slate-900 to-slate-950 border-b border-slate-800 py-8 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col items-center text-center space-y-6">
+            
+<!-- College Credentials Container -->
+<div class="max-w-5xl w-full mx-auto">
+    <!-- Grid container to force strict Left - Center - Right columns -->
+    <div class="grid grid-cols-[auto_1fr_auto] items-center gap-4 text-left md:text-center">
+        
+        <!-- 1. College Logo (Strictly Left Side) -->
+        <div class="shrink-0">
+            <img src="https://lh3.googleusercontent.com/u/0/d/11b-oJMFJtyKKKZQDFqbHpY8BHCMhJx-k" alt="College Logo" class="w-12 h-12 md:w-16 md:h-16 object-contain rounded-full border border-slate-700 bg-white p-1">
+        </div>
+        
+        <!-- 2. College Name Text (Center Column) -->
+        <div class="space-y-1">
+            <h1 class="text-lg md:text-2xl lg:text-3xl font-extrabold tracking-wide text-white uppercase leading-tight">
+                Dwaraka Doss Goverdhan Doss Vaishnav College
+            </h1>
+        </div>
+        
+        <!-- 3. Club Logo (Strictly Right Side) -->
+        <div class="shrink-0">
+            <img src="https://drive.google.com/thumbnail?id=1IDC7ai4Mnl3zfY6EvbmtboiLmtflfCJg&sz=w2000" alt="Club Logo" class="w-12 h-12 md:w-16 md:h-16 object-contain rounded-full border border-slate-700 bg-slate-900 p-1">
+        </div>
+
+    </div>
+
+    <!-- Sub-credentials remaining below -->
+    <div class="text-center space-y-1 mt-4">
+        <p class="text-xs md:text-sm font-semibold text-emerald-400 tracking-wider uppercase">
+            (Autonomous) • Re-accredited by NAAC with A++ Grade in 3rd Cycle
+        </p>
+        <p class="text-xs text-slate-400 italic">
+            College with Potential for Excellence • Linguistic Minority Institution • Affiliated to University of Madras
+        </p>
+        <p class="text-xs text-slate-500">Arumbakkam, Chennai – 600 106</p>
+    </div>
+</div>
+            <!-- Department info -->
+            <div class="bg-emerald-950/30 border border-emerald-500/20 px-6 py-3 rounded-full">
+                <p class="text-sm md:text-base font-bold text-emerald-300 tracking-wide uppercase">
+                    Post Graduate Department of Biotechnology
+                </p>
+            </div>
+
+            <!-- Fest Banner -->
+            <div class="pt-6 space-y-3">
+                <h2 class="text-4xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-200 to-emerald-500 tracking-tight">
+                    TECHNOSAVIOUR 2026
+                </h2>
+                <p class="text-md md:text-xl text-slate-300 max-w-xl mx-auto font-medium">
+                    A fest exclusively for <span class="text-emerald-400 border-b border-emerald-400/30 pb-0.5">Life Science Students</span>
+                </p>
+            </div>
+             <!-- IMPORTANT NOTICE BAR -->
+<div class="w-full bg-white border-y border-gray-300 overflow-hidden">
+
+    <div class="flex h-11">
+
+        <!-- Red Notice Box -->
+        <div  class="bg-emerald-500 text-slate-900 font-bold text-lg px-6 flex items-center justify-center whitespace-nowrap">
+            Important Notice
+        </div>
+
+        <!-- Marquee Area -->
+        <div class="relative flex-1 overflow-hidden bg-slate-900">
+
+            <div class="ticker flex items-center whitespace-nowrap h-full">
+
+                <span class="mx-4 font-semibold text-emerald-300">
+                    🚀 TECHNOSAVIOUR Inter-College Event is LIVE! Register your spot now!!
+                </span>
+
+                <span class="mx-4 font-semibold text-emerald-300">
+                    📢 Registration closes on 10 June 2026.
+                </span>
+
+                <span class="mx-4 font-semibold text-emerald-300">
+                    🎓 Certificates will be provided to all participants.
+                </span>
+
+                <span class="mx-4 font-semibold text-emerald-300">
+                    🏆 Exciting prizes for Winners.
+                </span>
+
+                <!-- Duplicate for seamless scrolling -->
+
+                <span class="mx-4 font-semibold text-emerald-300">
+                    🚀 TECHNOSAVIOUR Inter-College Event is LIVE! Register your spot now!!
+                </span>
+
+                <span class="mx-4 font-semibold text-emerald-300">
+                    📢 Registration closes on 10 June 2026.
+                </span>
+
+                <span class="mx-4 font-semibold text-emerald-300">
+                    🎓 Certificates will be provided to all participants.
+                </span>
+
+                <span class="mx-4 font-semibold text-emerald-300">
+                    🏆 Exciting prizes for Winners.
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<section class="slider-container">
+
+    <button class="nav prev">&#10094;</button>
+
+    <div class="slider-wrapper">
+<div class="slider" id="slider">
+
+    <img src="images/env1.jpg" alt="Slide 1">
+    <img src="images/env2.jpg" alt="Slide 2">
+    <img src="images/env3.jpg" alt="Slide 3">
+    <img src="images/env4.jpg" alt="Slide 4">
+    <img src="images/env5.jpg" alt="Slide 5">
+    <img src="images/env6.jpg" alt="Slide 6">
+
+</div>
+
+    <button class="nav next">&#10095;</button>
+
+</section>
+
+            <!-- Quick Action Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 pt-4">
+                <a href="#register" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-8 py-3 rounded-lg shadow-lg shadow-emerald-500/20 transition-all transform hover:-translate-y-0.5">
+                    Register Now
+                </a>
+                <a href="#details" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 font-medium px-6 py-3 rounded-lg transition-all">
+                    Rulebook & Details
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- EVENT QUICK INFO METRICS -->
+    <section id="details" class="max-w-5xl mx-auto px-4 -mt-6 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 bg-slate-900 border border-slate-800 p-6 rounded-xl shadow-2xl">
+            <div class="flex items-center space-x-4 p-2">
+                <div class="w-12 h-12 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl">
+                    <i class="fa-solid fa-calendar-day"></i>
+                </div>
+                <div>
+                    <p class="text-xs text-slate-400 uppercase tracking-wider font-bold">Date</p>
+                    <p class="text-lg font-bold text-white">12 06 2026</p>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-4 p-2 border-y md:border-y-0 md:border-x border-slate-800">
+                <div class="w-12 h-12 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                    <p class="text-xs text-slate-400 uppercase tracking-wider font-bold">Time</p>
+                    <p class="text-lg font-bold text-white">9:00 AM Onwards</p>
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-4 p-2">
+                <div class="w-12 h-12 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                    <p class="text-xs text-slate-400 uppercase tracking-wider font-bold">Venue</p>
+                    <p class="text-lg font-bold text-white">DDGDVC Campus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+
+    <!-- MAIN CONTENT: ABOUT SECTIONS -->
+    <main class="max-w-6xl mx-auto px-4 py-16 space-y-16">
+        
+        <section  class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+    <!-- About the College -->
+    <div class="bg-slate-900/40 border border-slate-800/80 p-8 rounded-2xl hover:border-slate-700 transition-all">
+        <div class="text-emerald-400 text-2xl mb-4">
+            <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+
+        <h3 class="text-xl font-bold text-white mb-3">
+            About the College
+        </h3>
+
+        <p class="text-sm text-slate-400 leading-relaxed">
+            Dwaraka Doss Goverdhan Doss Vaishnav College is a renowned
+            institution known for its academic excellence and commitment
+            to holistic education. Established with a vision for future-ready
+            minds, the college offers undergraduate and postgraduate programmes
+            across various disciplines.
+        </p>
+
+        <div class="pt-6 border-t border-slate-800 mt-6 text-xs text-slate-500">
+            DDGDVC CAMPUS
+        </div>
+    </div>
+
+    <!-- Department -->
+    <div class="bg-gradient-to-b from-slate-900 to-slate-900/40 border border-emerald-500/20 p-8 rounded-2xl hover:border-emerald-500 transition-all">
+        <div class="text-emerald-400 text-2xl mb-4">
+            <i class="fa-solid fa-dna"></i>
+        </div>
+
+        <h3 class="text-xl font-bold text-white mb-3">
+            The Department
+        </h3>
+
+        <p class="text-sm text-slate-300 leading-relaxed">
+            The Post Graduate Department of Biotechnology is a dynamic
+            centre for learning and research with excellent laboratory
+            facilities and experienced faculty members.
+        </p>
+
+        <div class="pt-6 border-t border-slate-800 mt-6 text-xs text-emerald-400">
+            PG BIOTECHNOLOGY
+        </div>
+    </div>
+
+    <!-- Student Club -->
+    <div class="bg-slate-900/40 border border-slate-800/80 p-8 rounded-2xl hover:border-slate-700 transition-all">
+        <div class="text-emerald-400 text-2xl mb-4">
+            <i class="fa-solid fa-users"></i>
+        </div>
+
+        <h3 class="text-xl font-bold text-white mb-3">
+            The Student Club
+        </h3>
+
+        <p class="text-sm text-slate-400 leading-relaxed">
+            Our student club organizes workshops, seminars,
+            competitions, industrial visits and biotechnology
+            events throughout the year.
+        </p>
+
+        <div class="pt-6 border-t border-slate-800 mt-6 text-xs text-slate-500">
+            STUDENT COMMUNITY
+        </div>
+    </div>
+
+    <!-- YouTube Video -->
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-lg">
+
+        <div class="bg-emerald-500 text-slate-900 text-lg font-bold px-5 py-3">
+            Technosaviour Club
+        </div>
+
+        <iframe
+            class="w-full h-[320px]"
+            src="https://www.instagram.com/reel/DaYOwyXJ7F6/?utm_source=ig_web_button_share_sheet"
+            title="Technosaviour Club"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
+
+        
+                <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 px-4 rounded-lg tracking-wide transition-colors cursor-pointer">
+                    Complete Registration <i class="fa-solid fa-arrow-right-long ml-2"></i>
+                </button>
+            </form>
+        </section>
+
+        <!-- CONTACT US / COMMITTEE -->
+        <section class="space-y-8">
+            <div class="text-center max-w-md mx-auto">
+                <h3 class="text-2xl font-bold text-white">Contact Organizing Committee</h3>
+                <p class="text-xs text-slate-400 mt-1">Reach out to our student heads and secretary board for support.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <!-- 1. Saravanan -->
+                <div class="bg-slate-900 border border-slate-800/60 p-5 rounded-xl text-center flex flex-col justify-between">
+                    <div>
+                        <p class="text-sm font-bold text-white">G.K.SARAVANAN</p>
+                        <p class="text-[11px] text-emerald-400 uppercase tracking-widest mt-0.5">Organizing Secretary</p>
+                    </div>
+                    <a href="tel:+916379588388" class="mt-4 block bg-slate-950 hover:bg-slate-800 border border-slate-800 text-xs text-slate-300 py-1.5 rounded-md transition-colors"><i class="fa-solid fa-phone mr-1.5 text-emerald-400"></i> +91 98765 43210</a>
+                </div>
+
+                <!-- 2. Hemapriya -->
+                <div class="bg-slate-900 border border-slate-800/60 p-5 rounded-xl text-center flex flex-col justify-between">
+                    <div>
+                        <p class="text-sm font-bold text-white">Princy</p>
+                        <p class="text-[11px] text-emerald-400 uppercase tracking-widest mt-0.5">Organizing Secretary</p>
+                    </div>
+                    <a href="tel:+916379588388" class="mt-4 block bg-slate-950 hover:bg-slate-800 border border-slate-800 text-xs text-slate-300 py-1.5 rounded-md transition-colors"><i class="fa-solid fa-phone mr-1.5 text-emerald-400"></i> +91 98765 43210</a>
+                </div>
+
+                <!-- 3. Yogitha -->
+                <div class="bg-slate-900 border border-emerald-500/20 p-5 rounded-xl text-center flex flex-col justify-between shadow-md shadow-emerald-950/20">
+                    <div>
+                        <p class="text-sm font-bold text-white">Yogitha</p>
+                        <p class="text-[11px] text-emerald-400 uppercase tracking-widest mt-0.5 font-bold">President</p>
+                    </div>
+                   <a href="tel:+916379588388" class="mt-4 block bg-slate-950 hover:bg-slate-800 border border-slate-800 text-xs text-slate-300 py-1.5 rounded-md transition-colors"><i class="fa-solid fa-phone mr-1.5 text-emerald-400"></i> +91 98765 43210</a>
+                </div>
+
+                <!-- 4. Kharan (FIXED) -->
+                <div class="bg-slate-900 border border-slate-800/60 p-5 rounded-xl text-center flex flex-col justify-between">
+                    <div>
+                        <p class="text-sm font-bold text-white">Kharan</p>
+                        <p class="text-[11px] text-emerald-400 uppercase tracking-widest mt-0.5">Vice President</p>
+                    </div>
+                    <a href="tel:+916379588388" class="mt-4 block bg-slate-950 hover:bg-slate-800 border border-slate-800 text-xs text-slate-300 py-1.5 rounded-md transition-colors"><i class="fa-solid fa-phone mr-1.5 text-emerald-400"></i> +91 98765 43210</a>
+                </div>
+
+                <!-- 5. Kural -->
+                <div class="bg-slate-900 border border-slate-800/60 p-5 rounded-xl text-center flex flex-col justify-between">
+                    <div>
+                        <p class="text-sm font-bold text-white">Balaji</p>
+                        <p class="text-[11px] text-emerald-400 uppercase tracking-widest mt-0.5">Secretary</p>
+                    </div>
+                    <a href="tel:+916379588388" class="mt-4 block bg-slate-950 hover:bg-slate-800 border border-slate-800 text-xs text-slate-300 py-1.5 rounded-md transition-colors"><i class="fa-solid fa-phone mr-1.5 text-emerald-400"></i> +91 98765 43210</a>
+                </div>
+            </div>
+        </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-950 border-t border-slate-900 py-10 px-4 text-center space-y-4">
+        <div class="flex justify-center space-x-6 text-xl">
+            <a href="https://www.instagram.com/technosaviourclub?igsh=MXh5M2g4cDJubzF0Zg==" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-pink-500 transition-colors" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/dgvcbiotech/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-500 transition-colors" title="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+                        <a href="https://youtube.com/@dgvcbiotech6733?si=7olnkAlutLqFXIP9" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-red-500 transition-colors" title="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+             <a href="https://www.facebook.com/dgvc.biotech/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-red-500 transition-colors" title="YouTube">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+        </div>
+        
+        <p class="text-xs text-slate-500">© 2026 Dwaraka Doss Goverdhan Doss Vaishnav College. All rights reserved.</p>
+    </footer>
+<script>
+const ticker = document.querySelector(".ticker");
+
+// Duplicate all notices once
+ticker.innerHTML += ticker.innerHTML;
+</script>
+<script>
+
+const slider = document.getElementById("slider");
+const slides = document.querySelectorAll("#slider img");
+
+let index = 0;
+
+function updateSlider() {
+    slider.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function nextSlide() {
+    index++;
+    if (index >= slides.length) {
+        index = 0;
+    }
+    updateSlider();
+}
+
+function prevSlide() {
+    index--;
+    if (index < 0) {
+        index = slides.length - 1;
+    }
+    updateSlider();
+}
+
+document.querySelector(".next").addEventListener("click", nextSlide);
+document.querySelector(".prev").addEventListener("click", prevSlide);
+
+// Auto slide every 3 seconds
+setInterval(nextSlide, 3000);
+
+</script>
+</body>
+</html>
